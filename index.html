@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodróżujeMy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <i class="fa-solid fa-globe"></i>
+                <h1>PodróżujeMy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#destinations">Cele podróży</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="hero-slider" class="hero-slider">
+            <div class="slider">
+                <div class="slide active" data-slide="1">
+                    <div class="slide-bg" style="background-image: url('assets/slider_img_1.jpg');"></div>
+                     <div class="slide-caption">
+                        <h2>Góry</h2>
+                        <p>Odkryj niesamowite szlaki górskie!</p>
+                    </div>
+                </div>
+                <div class="slide" data-slide="2">
+                     <div class="slide-bg" style="background-image: url('assets/slider_img_2.jpg');"></div>
+                    <div class="slide-caption">
+                        <h2>Plaże</h2>
+                        <p>Zrelaksuj się na słonecznych plażach!</p>
+                    </div>
+                </div>
+                 <div class="slide" data-slide="3">
+                     <div class="slide-bg" style="background-image: url('assets/slider_img_3.jpg');"></div>
+                     <div class="slide-caption">
+                        <h2>Miasta</h2>
+                        <p>Przeżyj niezapomniane chwile w tętniących życiem miastach!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+         <section id="flight-deals" class="flight-deals-section">
+            <h2 class="section-title">Najkorzystniejsze Oferty Lotnicze</h2>
+            <div class="flight-deals-grid">
+                <div class="flight-deal-item" data-destination="Hiszpania">
+                    <i class="fa-solid fa-plane"></i>
+                    <h3>Hiszpania</h3>
+                    <p>Lot z Warszawy do Madrytu</p>
+                    <span class="price" data-price="500 PLN">500 PLN</span>
+                </div>
+                <div class="flight-deal-item" data-destination="Włochy">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>Włochy</h3>
+                    <p>Lot z Warszawy do Rzymu</p>
+                    <span class="price" data-price="450 PLN">450 PLN</span>
+                </div>
+                <div class="flight-deal-item" data-destination="Grecja">
+                    <i class="fa-solid fa-plane"></i>
+                    <h3>Grecja</h3>
+                    <p>Lot z Warszawy do Aten</p>
+                    <span class="price" data-price="400 PLN">400 PLN</span>
+                </div>
+                <div class="flight-deal-item" data-destination="USA">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>USA</h3>
+                    <p>Lot z Warszawy do Nowego Jorku</p>
+                    <span class="price" data-price="2000 PLN">2000 PLN</span>
+                </div>
+                <div class="flight-deal-item" data-destination="Turcja">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>Turcja</h3>
+                    <p>Lot z Warszawy do Stambułu</p>
+                    <span class="price" data-price="600 PLN">600 PLN</span>
+                </div>
+            </div>
+           <button class="btn update-deals">Aktualizuj oferty</button>
+        </section>
+
+        <section id="destinations" class="destinations-section">
+            <h2 class="section-title">Polecane Cele Podróży</h2>
+            <div class="destination-grid">
+                <div class="destination-item" data-destination="Grecja">
+                    <img src="assets/greece.jpg" alt="Grecja">
+                    <h3>Grecja</h3>
+                </div>
+                <div class="destination-item" data-destination="Japonia">
+                    <img src="assets/japan.jpg" alt="Japonia">
+                    <h3>Japonia</h3>
+                </div>
+                <div class="destination-item" data-destination="Włochy">
+                    <img src="assets/italy.jpg" alt="Włochy">
+                    <h3>Włochy</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Galeria Zdjęć</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/gallery_1.jpg" alt="Zdjęcie z podróży">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_2.jpg" alt="Zdjęcie z podróży">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_3.jpg" alt="Zdjęcie z podróży">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_4.jpg" alt="Zdjęcie z podróży">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery_5.jpg" alt="Zdjęcie z podróży">
+                </div>
+                 <div class="gallery-item">
+                    <img src="assets/gallery_6.jpg" alt="Zdjęcie z podróży">
+                </div>
+            </div>
+        </section>
+
+         <div id="lightbox" class="lightbox">
+           <span class="close-lightbox">×</span>
+            <img src="" alt="Podgląd zdjęcia" class="lightbox-image">
+         </div>
+
+
+        <section id="blog" class="blog-section">
+            <h2 class="section-title">Blog Podróżniczy</h2>
+            <div class="blog-grid">
+                <div class="blog-item">
+                    <h3>Wskazówki podróżnicze</h3>
+                    <p>Kilka porad jak oszczędzać podczas podróży</p>
+                    <a href="#" class="btn">Czytaj Więcej</a>
+                </div>
+                <div class="blog-item">
+                    <h3>Niezapomniane miejsca</h3>
+                    <p>Zobacz najpiękniejsze miejsca na ziemi</p>
+                    <a href="#" class="btn">Czytaj Więcej</a>
+                </div>
+                <div class="blog-item">
+                    <h3>Moje przygody</h3>
+                    <p>Przeczytasz tutaj o moich przygodach!</p>
+                    <a href="#" class="btn">Czytaj Więcej</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Kontakt</h2>
+            <p>Masz pytania lub sugestie? Skontaktuj się z nami!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required placeholder="Wpisz swoje imię">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Wpisz swój adres email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Wpisz swoją wiadomość"></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn contact-btn">Wyślij</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 PodróżujeMy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
